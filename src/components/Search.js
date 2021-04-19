@@ -8,13 +8,13 @@ const Search = () => {
     return (
         <>
             <form>
-            <input
-                type="text"
-                className="search-input"
-                placeholder="Search..."
-                onChange={(e) => setValue(e.target.value)}
-            />
-            <button className="search-submit" type="submit">Go!</button>
+                <input
+                    type="text"
+                    className="search-input"
+                    placeholder="Search..."
+                    onChange={(e) => setValue(e.target.value)}
+                />
+                <button className="search-submit" type="submit">Go!</button>
             </form>
         </>
     );
