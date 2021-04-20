@@ -9,10 +9,12 @@ form {
     height: 20px;
     border: 1px solid rgba(206,10,43,0.3);
     border-radius: 3px;
-    color: rgb(206, 10, 43);
+    /* color: rgb(206, 10, 43); */
+    color: #444;
     font-family: monospace;
     font-size: 1.4rem;
     font-weight: bold;
+    letter-spacing: 0.2rem;
     padding: 0.5rem 1.5rem;
     box-shadow: 0 0 10px rgba(206,10,43,0.3);
 }
