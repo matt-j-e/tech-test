@@ -4,11 +4,16 @@ import ("../styles/Search.css");
 
 const Search = () => {
 
-    const [value, setValue] = useState('');
+    const [searchValue, setSearchValue] = useState('');
 
     const handleSubmit = (event) => {
         event.preventDefault();
-        getImages(value);
+        getImages(searchValue);
+    }
+
+    const handleInput = (event) => {
+        setSearchValue(event.target.value);
+        console.log(searchValue);
     }
 
     return (
@@ -18,7 +23,7 @@ const Search = () => {
                     type="text"
                     className="search-input"
                     placeholder="Search..."
-                    onChange={(e) => setValue(e.target.value)}
+                    onChange={handleInput}
                 />
                 <button className="search-submit" type="submit">Go!</button>
             </form>
