@@ -8,8 +8,9 @@ const Search = ({ setSearchResults }) => {
 
     const handleSubmit = (event) => {
         event.preventDefault();
-        getImages(searchValue)
-            .then(images => setSearchResults(images));
+        // getImages(searchValue)
+        //     .then(images => setSearchResults(images));
+        setSearchResults(getImages(searchValue));
     }
 
     const handleInput = (event) => {
