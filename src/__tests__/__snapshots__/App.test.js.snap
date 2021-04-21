@@ -23,9 +23,9 @@ exports[`App renders correctly 1`] = `
         Go!
       </button>
     </form>
-    <p>
+    <h1>
       No results
-    </p>
+    </h1>
   </div>
 </DocumentFragment>
 `;

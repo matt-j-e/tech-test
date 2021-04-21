@@ -10,14 +10,14 @@
 }
 
 .search-results-list img {
-    height: 20vh;
-    padding: 0.5rem;
+    height: 10vh;
+    padding: 0.3rem;
 }
 
 /*** MEDIA QUERIES ***/
 @media screen and (min-width: 700px) {
     .search-results-list img {
-        height: 25vh;
+        height: 15vh;
         width: auto;
         padding: 0.5rem;
     }
