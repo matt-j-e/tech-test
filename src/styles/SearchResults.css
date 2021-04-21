@@ -4,6 +4,21 @@
     padding: 0;
 }
 
+.search-results-list li {
+    display: inline-block;
+
+}
+
 .search-results-list img {
-    width: 90vw;
+    height: 20vh;
+    padding: 0.5rem;
+}
+
+/*** MEDIA QUERIES ***/
+@media screen and (min-width: 700px) {
+    .search-results-list img {
+        height: 25vh;
+        width: auto;
+        padding: 0.5rem;
+    }
 }

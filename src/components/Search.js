@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import PropTypes from "prop-types";
 import getImages from "../requests/getImages";
 import ("../styles/Search.css");
 
@@ -8,9 +9,9 @@ const Search = ({ setSearchResults }) => {
 
     const handleSubmit = (event) => {
         event.preventDefault();
-        // getImages(searchValue)
-        //     .then(images => setSearchResults(images));
-        setSearchResults(getImages(searchValue));
+        getImages(searchValue)
+            .then(images => setSearchResults(images));
+        // setSearchResults(getImages(searchValue));
     }
 
     const handleInput = (event) => {
@@ -31,6 +32,10 @@ const Search = ({ setSearchResults }) => {
             </form>
         </>
     );
+};
+
+Search.propTypes = {
+    setSearchResults: PropTypes.func,
 };
 
 export default Search;
