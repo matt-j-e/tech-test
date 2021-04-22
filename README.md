@@ -34,7 +34,7 @@ You may use this asset for your application: `https://cdn.cnn.com/cnnnext/dam/as
 ## HOW TO RUN THE APP
 
 After cloning the repo to your own machine, run `npm install` to ensure that all necessary packages are installed.
-Then run `npm start`.
+Then run `npm start`. If the app doesn't open in your browser automatically, open a new tab and navigate to `http://localhost:3000`
 
 Simply type a search term into the search box and the app will display a collection of up to 100 photos related to your search term using data pulled from the NASA API.
 
@@ -43,4 +43,6 @@ Simply type a search term into the search box and the app will display a collect
 **Matt Edwards** in April 2021 as part of the Manchester Codes Software Engineer FastTrack course.
 
 ## IF I HAD MORE TIME I WOULD
-Style the app better than it currently is. In the time available I couldn't come up with a way to tidy up the presentation of the images when they are all of different aspect ratios and you don't know ahead of time what you are going to get.
+Style the app better than it currently is. In the time available I couldn't come up with a way to tidy up the presentation of the images when they are all of different aspect ratios and you don't know ahead of time what you are going to get so the spacing is a little random. The flexbox `justify-items: space-between` CSS setting does a good job of keeping the edges tidy; it's just the rest of the display configuration that's in a bit of a pickle!
+
+The images provided are thumbnails. It would be good if clicking a thumbnail opened a larger version of the image. 
